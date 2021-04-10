@@ -1,0 +1,93 @@
+﻿<Window xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiceSimulator"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    x:Class="DiceSimulator.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" >
+            <TextBlock Text="Number Of Chips Per Player:" Margin="2" HorizontalAlignment="Center" />
+            <dxe:SpinEdit Value="{Binding NumberOfChips, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            x:Name="spinEditChips"
+            HorizontalAlignment="Center" 
+                      VerticalAlignment="Top" 
+                      Width="150"
+                       Mask="D"
+                      MaskType="Numeric"
+                      MaxValue="10" 
+                      MinValue="3" 
+                      AllowRoundOutOfRangeValue="True"/>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBlock Text="Number of Players:" Margin="2" HorizontalAlignment="Center"/>
+            <dxe:SpinEdit Value="{Binding NumberOfPlayers, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            x:Name="spinEditPlayers"
+            HorizontalAlignment="Center" 
+                      VerticalAlignment="Top" 
+                      Width="150"
+                       Mask="D"
+                      MaskType="Numeric"
+                      MaxValue="10" 
+                      MinValue="3" 
+                      AllowRoundOutOfRangeValue="True"/>
+
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="2">
+            <TextBlock Text="Number of Games:" Margin="2" HorizontalAlignment="Center"/>
+            <dxe:SpinEdit Value="{Binding NumberOfGames, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            x:Name="spinEditGames"
+            HorizontalAlignment="Center" 
+                      VerticalAlignment="Top" 
+                      Width="150"
+                       Mask="D"
+                      MaskType="Numeric"
+                      MaxValue="100000" 
+                      MinValue="1" 
+                      AllowRoundOutOfRangeValue="True"/>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <TextBlock Text="Average Turns:" Margin="2" HorizontalAlignment="Center"/>
+            <TextBlock Text="{Binding AverageTurns}" Margin="2" HorizontalAlignment="Center"/>
+
+
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Longest Turns:" Margin="2" HorizontalAlignment="Center"/>
+            <TextBlock Text="{Binding LongestTurns}" Margin="2" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Shortest Turns:" Margin="2" HorizontalAlignment="Center"/>
+            <TextBlock Text="{Binding ShortestTurns}" Margin="2" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+            
+            <TextBlock Text="Play LCR Game" Margin="2" HorizontalAlignment="Center"/>
+            <dx:SimpleButton x:Name="simpleButton" Content="Play Game" Height="40" Width="126" 
+                             Command="{Binding PlayLCRGame}" 
+                             CommandParameter="{Binding ElementName=spinEditGames,Path=Value}"  >
+                
+            </dx:SimpleButton>
+        </StackPanel>
+    </Grid>
+</Window>

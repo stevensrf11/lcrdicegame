@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceSimulator", "DiceSimulator\DiceSimulator.csproj", "{74D89739-223E-4CC0-BD48-2F0072782CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceSimulator.Intefaces", "DiceSimulator.Intefaces\DiceSimulator.Intefaces.csproj", "{E049A242-9596-417B-89ED-B251C3EDB772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceSimulator.Services", "DiceSimulator.Services\DiceSimulator.Services.csproj", "{C59091E7-6EE1-41E0-AAD6-9C93DF83ADBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceSimulator.Models", "Models\DiceSimulator.Models.csproj", "{56427862-1BCC-4DCF-90BE-3FE9F94094EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74D89739-223E-4CC0-BD48-2F0072782CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D89739-223E-4CC0-BD48-2F0072782CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D89739-223E-4CC0-BD48-2F0072782CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D89739-223E-4CC0-BD48-2F0072782CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E049A242-9596-417B-89ED-B251C3EDB772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E049A242-9596-417B-89ED-B251C3EDB772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E049A242-9596-417B-89ED-B251C3EDB772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E049A242-9596-417B-89ED-B251C3EDB772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59091E7-6EE1-41E0-AAD6-9C93DF83ADBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59091E7-6EE1-41E0-AAD6-9C93DF83ADBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59091E7-6EE1-41E0-AAD6-9C93DF83ADBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59091E7-6EE1-41E0-AAD6-9C93DF83ADBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56427862-1BCC-4DCF-90BE-3FE9F94094EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56427862-1BCC-4DCF-90BE-3FE9F94094EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56427862-1BCC-4DCF-90BE-3FE9F94094EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56427862-1BCC-4DCF-90BE-3FE9F94094EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E873F26E-3611-4F17-858E-327DD00EC068}
+	EndGlobalSection
+EndGlobal
